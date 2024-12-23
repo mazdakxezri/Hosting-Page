@@ -1,4 +1,5 @@
 import { social } from "../utilities/social.js";
+import { featuresItem } from "../utilities/features.js";
 
 document.getElementById("current-year").textContent = new Date().getFullYear();
 function createFooter() {
@@ -18,4 +19,22 @@ function createFooter() {
     socialsList.appendChild(link);
   });
 }
+
+function featuresSection() {
+  const featuresList = document.querySelectorAll(".Features-list");
+  featuresList.forEach((listElement, indexElement) => {
+    featuresItem.forEach((item) => {
+      if (indexElement === 0 && item.id === 8) {
+        return;
+      }
+      const list = document.createElement("li");
+      list.id = item.id;
+      list.textContent = item.text;
+      list.className = "text-xl font-semibold text-gray-500 pt-6 pb-2";
+      listElement.appendChild(list);
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", createFooter);
+document.addEventListener("DOMContentLoaded", featuresSection);
