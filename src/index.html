@@ -9,47 +9,28 @@
       rel="stylesheet"
     />
     <script src="page.js" type="module" defer></script>
-    <title>Document</title>
+    <title>Home</title>
   </head>
-  <body>
-    <div id="Hero" class="bg-red-100">
-      <header class="absolute inset-x-0 top-0 z-50">
+  <body class="bg-red-400">
+    <div id="Hero" class="shadow-lg">
+      <header class="sm:fixed absolute bg-gray-300 inset-x-0 top-0 z-50">
+        <!--Desktop Nav-->
         <nav
-          class="flex items-center justify-between p-6 lg:px-8"
+          class="hidden md:flex md:items-center md:justify-between md:p-6 lg:px-8"
           aria-label="Global"
         >
           <div class="flex lg:flex-1">
             <a href="#Hero" class="-m-1.5 p-1.5">
-              <span class="sr-only"></span>
-              <h2 class="h-8 w-auto uppercase font-extrabold text-4xl">
+              <h2
+                class="h-8 w-auto uppercase text-3xl font-bold lg:font-extrabold lg:text-4xl"
+              >
                 mazdak hosting
               </h2>
             </a>
           </div>
-          <div class="flex lg:hidden">
-            <button
-              type="button"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="size-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                data-slot="icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </button>
-          </div>
-          <div class="hidden md:flex md:gap-x-12">
+          <div
+            class="hidden sm:flex md:p-6 sm:gap-x-6 sm:justify-end md:justify-center md:gap-x-12"
+          >
             <a href="#Pricing" class="text-lg font-bold text-gray-900"
               >Pricing</a
             >
@@ -57,7 +38,7 @@
               >Contact</a
             >
           </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div class="hidden md:flex md:flex-1 md:justify-end">
             <a
               href="#"
               class="rounded-md bg-gray-800 px-3.5 py-2.5 text-md font-bold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 uppercase"
@@ -65,238 +46,232 @@
             >
           </div>
         </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" role="dialog" aria-modal="true">
-          <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-50"></div>
-          <div
-            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-          >
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <h2 class="h-8 w-auto sm:hidden uppercase text-4xl">
-                  mazdak hosting
-                </h2>
-              </a>
-              <button
-                type="button"
-                class="-m-2.5 rounded-md p-2.5 bg-gray-500 text-gray-700"
-              >
-                <span class="sr-only">Close menu</span>
-                <svg
-                  class="size-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18 18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-8 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="space-y-2 py-10">
-                  <a
-                    href="#Pricing"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-md font-bold text-gray-900 hover:bg-gray-300"
-                    >Pricing</a
-                  >
-                  <a
-                    href="#Contact"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-md font-bold text-gray-900 hover:bg-gray-300"
-                    >Contact</a
-                  >
-                </div>
-                <div class="py-6">
-                  <a
-                    href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2.5 uppercase text-md font-bold text-gray-900 hover:bg-gray-300"
-                    >Log in</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <div class="relative isolate px-6 pt-14 lg:px-8">
-        <div
-          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
+        <!-- Mobile Nav -->
+        <nav
+          class="flex items-center justify-between p-6 md:hidden"
+          aria-label="Global"
         >
+          <div class="flex">
+            <a href="#Hero" class="-m-1.5 p-1.5">
+              <h2 class="h-8 w-auto uppercase font-bold text-xl">
+                mazdak hosting
+              </h2>
+            </a>
+          </div>
+          <div class="flex gap-x-6 justify-end">
+            <a href="#Pricing" class="text-lg font-bold text-gray-900"
+              >Pricing</a
+            >
+            <a href="#Contact" class="text-lg font-bold text-gray-900"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </header>
+      <div
+        class="mx-auto py-20 sm:py-32 md:mx-auto md:max-w-4xl md:py-32 lg:py-48"
+      >
+        <div class="text-center">
+          <h1
+            class="text-balance text-3xl sm:text-4xl md:text-5xl font-bold md:font-bold tracking-tight text-gray-900"
+          >
+            Build Your Online Presence with WordPress
+          </h1>
+          <p
+            class="mt-8 text-pretty text-lg sm:text-xl md:font-semibold md:text-2xl font-semibold text-gray-500"
+          >
+            Start your website with our Free WordPress Hosting. Mazdak Hosting
+            offers reliable performance, easy setup, and essential features
+            without any cost.
+          </p>
           <div
-            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style="
-              clip-path: polygon(
-                74.1% 44.1%,
-                100% 61.6%,
-                97.5% 26.9%,
-                85.5% 0.1%,
-                80.7% 2%,
-                72.5% 32.5%,
-                60.2% 62.4%,
-                52.4% 68.1%,
-                47.5% 58.3%,
-                45.2% 34.5%,
-                27.5% 76.7%,
-                0.1% 64.9%,
-                17.9% 100%,
-                27.6% 76.8%,
-                76.1% 97.7%,
-                74.1% 44.1%
-              );
-            "
-          ></div>
-        </div>
-        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div class="text-center">
-            <h1
-              class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
+            class="mt-20 md:mt-24 md:flex md:items-center md:justify-center flex items-center justify-around gap-x-6"
+          >
+            <a
+              href="#"
+              class="rounded-md bg-gray-800 px-3.5 py-2.5 text-md font-bold text-white shadow-sm hover:bg-gray-700 focus-visible:outline-gray-800 uppercase"
+              >sing up</a
             >
-              Build Your Online Presence with WordPress
-            </h1>
-            <p
-              class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8"
-            >
-              Start your website with our Free WordPress Hosting. Mazdak Hosting
-              offers reliable performance, easy setup, and essential features
-              without any cost.
-            </p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
+            <div class="md:hidden">
               <a
                 href="#"
-                class="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 uppercase"
-                >sing up</a
-              >
-              <a
-                href="#Pricing"
-                class="text-sm/6 font-semibold text-gray-900 bg-gray-400 hover:bg-gray-300 uppercase rounded-md px-3.5 py-2.5"
-                >view prices<span aria-hidden="true">→</span></a
+                class="rounded-md bg-gray-800 px-3.5 py-2.5 text-md font-bold text-white shadow-sm hover:bg-gray-700 focus-visible:outline-gray-800 uppercase"
+                >Log in <span aria-hidden="true">→</span></a
               >
             </div>
+            <a
+              href="#Pricing"
+              class="text-sm/6 font-semibold text-gray-900 bg-gray-400 hover:bg-gray-300 uppercase rounded-md px-3.5 py-2.5"
+              >view prices<span aria-hidden="true">→</span></a
+            >
           </div>
-        </div>
-        <div
-          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style="
-              clip-path: polygon(
-                74.1% 44.1%,
-                100% 61.6%,
-                97.5% 26.9%,
-                85.5% 0.1%,
-                80.7% 2%,
-                72.5% 32.5%,
-                60.2% 62.4%,
-                52.4% 68.1%,
-                47.5% 58.3%,
-                45.2% 34.5%,
-                27.5% 76.7%,
-                0.1% 64.9%,
-                17.9% 100%,
-                27.6% 76.8%,
-                76.1% 97.7%,
-                74.1% 44.1%
-              );
-            "
-          ></div>
         </div>
       </div>
     </div>
-    <section id="Pricing" class="bg-red-100">
-      <div class="flex justify-evenly items-center">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full h-full">
-          <!-- Basic Plan -->
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <h2 class="text-5xl font-extrabold text-purple-600">Basic</h2>
-            <p class="mt-2 mb-10 text-gray-700 font-semibold">
-              Great for Your First Site
-            </p>
-            <div class="mt-8">
-              <span class="text-3xl font-bold">$</span>
-              <span class="text-3xl font-bold">0.25</span>
-              <p class="text-gray-700">/month</p>
-            </div>
-            <button
-              class="mt-6 w-full h-14 bg-purple-600 text-white text-xl font-semibold py-2 rounded-lg"
-            >
-              Order
-            </button>
-
-            <h4 class="text-2xl pt-8 font-bold text-purple-600">Features</h4>
-            <ul class="Features-list mt-6 space-y-2 text-gray-600">
-              <!--li for items-->
-            </ul>
+    <section id="Pricing">
+      <div class="bg-gray-700">
+        <article class="text-center py-10 md:text-center md:py-10">
+          <h2 class="text-5xl md:text-8xl font-bold md:font-extrabold">
+            Web Hosting Plans
+          </h2>
+          <div
+            class="mt-2 md:mt-6 mb-10 md:mb-14 text-gray-200 text-lg md:text-2xl font-semibold md:font-bold"
+          >
+            Enjoy fast, secure, and the Best WordPress hosting with Mazdak
+            Hosting!
           </div>
-          <!-- Web Pro Plan -->
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <h2 class="text-5xl font-extrabold text-purple-600">Web Pro</h2>
-            <p class="mt-2 mb-10 text-gray-700 font-semibold">
-              Great for Small Businesses
-            </p>
-            <div class="mt-8">
-              <span class="text-3xl font-bold">$</span>
-              <span class="text-3xl font-bold">7.00</span>
-              <p class="text-gray-700">/month</p>
-            </div>
-            <button
-              class="mt-6 w-full h-14 bg-purple-600 text-white text-xl font-semibold py-2 rounded-lg"
-            >
-              Order
-            </button>
+        </article>
+        <div class="flex justify-between items-center">
+          <div
+            class="grid grid-cols-1 py-10 md:py-16 md:grid-cols-3 gap-8 md:gap-8 w-full h-full"
+          >
+            <!-- Basic Plan -->
+            <div class="bg-gray-400 p-6 rounded-lg shadow-lg text-center">
+              <h2
+                class="md:text-5xl text-3xl font-semibold sm:font-bold sm:text-4xl md:font-extrabold text-blue-500"
+              >
+                Basic
+              </h2>
+              <p
+                class="mt-2 md:mt-2 mb-12 md:mb-10 text-gray-700 font-medium md:font-semibold"
+              >
+                Great for Your First Site
+              </p>
+              <div class="md:mt-8">
+                <span class="text-3xl font-bold md:text-4xl md:font-extrabold"
+                  >$</span
+                >
+                <span class="text-3xl font-bold md:text-4xl md:font-extrabold"
+                  >0.25</span
+                >
+                <p
+                  class="text-gray-700 text-lg font-semibold md:font-bold md:text-xl"
+                >
+                  /month
+                </p>
+              </div>
+              <button
+                class="mt-8 md:mt-6 w-full h-14 bg-blue-800 text-white md:text-xl text-lg font-semibold mb-16 md:mb-14 rounded-lg"
+              >
+                Order
+              </button>
 
-            <h4 class="text-2xl pt-8 font-bold text-purple-600">Features</h4>
-            <ul class="Features-list mt-6 space-y-2 text-gray-600">
-              <!--li for items-->
-            </ul>
-          </div>
-          <!-- Web Pro Plus Plan -->
-          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-            <h2 class="text-5xl font-extrabold text-purple-600">
-              Web Pro Plus
-            </h2>
-            <p class="mt-2 mb-10 text-gray-700 font-semibold">
-              Great for Established Endevours
-            </p>
-            <div class="mt-8">
-              <span class="text-3xl font-bold">$</span>
-              <span class="text-3xl font-bold">9.00</span>
-              <p class="text-gray-700">/month</p>
+              <h4
+                class="text-4xl pt-2 md:text-3xl md:pt-8 font-bold md:font-bold text-blue-900"
+              >
+                Features
+              </h4>
+              <ul
+                class="Features-list mt-10 md:mt-6 space-y-3 md:space-y-2 text-gray-700"
+              >
+                <!--li for items-->
+              </ul>
             </div>
-            <button
-              class="mt-6 w-full h-14 bg-purple-600 text-white text-xl font-semibold py-2 rounded-lg"
-            >
-              order
-            </button>
+            <!-- Web Pro Plan -->
+            <div class="bg-gray-400 p-6 rounded-lg shadow-lg text-center">
+              <span
+                class="uppercase md:font-bold relative md:absolute text-gray-200 bg-blue-500 md:p-4 p-2 m-3 md:-m-20 md:-mt-1/3 rounded-xl"
+              >
+                the best choice
+              </span>
+              <h2
+                class="md:text-5xl text-3xl font-semibold sm:font-bold sm:text-4xl md:font-extrabold text-blue-500"
+              >
+                Web Pro
+              </h2>
+              <p
+                class="mt-2 md:mt-2 mb-12 md:mb-10 text-gray-700 font-medium md:font-semibold"
+              >
+                Great for Small Businesses
+              </p>
+              <div class="md:mt-8">
+                <span class="text-3xl font-bold md:text-4xl md:font-extrabold"
+                  >$</span
+                >
+                <span class="text-3xl font-bold md:text-4xl md:font-extrabold"
+                  >7.00</span
+                >
+                <p
+                  class="text-gray-700 text-lg font-semibold md:font-bold md:text-xl"
+                >
+                  /month
+                </p>
+              </div>
+              <button
+                class="bg-white text-blue-600 mt-8 md:mt-6 w-full h-14 md:text-xl text-lg font-semibold mb-16 md:mb-14 rounded-lg"
+              >
+                Order
+              </button>
 
-            <h4 class="text-2xl pt-8 font-bold text-purple-600">Features</h4>
-            <ul class="Features-list mt-6 space-y-2 text-gray-600">
-              <!--li for items-->
-            </ul>
+              <h4
+                class="text-4xl pt-2 md:text-3xl md:pt-8 font-bold md:font-bold text-blue-900"
+              >
+                Features
+              </h4>
+              <ul
+                class="Features-list mt-10 md:mt-6 space-y-3 md:space-y-2 text-gray-700"
+              >
+                <!--li for items-->
+              </ul>
+            </div>
+
+            <!-- Web Pro Plus Plan -->
+            <div class="bg-gray-400 p-6 rounded-lg shadow-lg text-center">
+              <h2
+                class="md:text-5xl text-3xl font-semibold sm:font-bold sm:text-4xl md:font-extrabold text-blue-500"
+              >
+                Web Pro Plus
+              </h2>
+              <p
+                class="mt-2 md:mt-2 mb-12 md:mb-10 text-gray-700 font-medium md:font-semibold"
+              >
+                Great for Established Endevours
+              </p>
+              <div class="md:mt-8">
+                <span class="text-3xl font-bold md:text-4xl md:font-extrabold"
+                  >$</span
+                >
+                <span class="text-3xl font-bold md:text-4xl md:font-extrabold"
+                  >9.00</span
+                >
+                <p
+                  class="text-gray-700 text-lg font-semibold md:font-bold md:text-xl"
+                >
+                  /month
+                </p>
+              </div>
+              <button
+                class="mt-8 md:mt-6 w-full h-14 md:text-xl text-lg font-semibold mb-16 md:mb-14 rounded-lg bg-blue-800 text-white"
+              >
+                Order
+              </button>
+
+              <h4
+                class="text-4xl pt-2 md:text-3xl md:pt-8 font-bold md:font-bold text-blue-900"
+              >
+                Features
+              </h4>
+              <ul
+                class="Features-list mt-10 md:mt-6 space-y-3 md:space-y-2 text-gray-700"
+              >
+                <!--li for items-->
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <footer id="Contact" class="px-0 py-10">
+    <footer id="Contact" class="px-0 py-10 bg-blue-200">
       <div
-        class="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col"
+        class="container flex sm:justify-between justify-evenly items-center gap-10 max-sm:flex-col"
       >
-        <p class="caption text-n-4 lg:block">
+        <p class="caption lg:block text-gray-800">
           © <span id="current-year"></span>. All rights reserved.
         </p>
-        <ul id="socials-list" class="flex gap-5 flex-wrap"></ul>
+        <div class="text-center">
+          <h5 class="uppercase font-semibold text-gray-800">contact us</h5>
+          <ul id="socials-list" class="flex gap-5 flex-wrap"></ul>
+        </div>
       </div>
     </footer>
   </body>

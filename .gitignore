@@ -2,11 +2,12 @@
 node_modules/
 
 # Build output directories
-dist/
+
 build/
 
 # Environment variables
 .env
+.dist
 
 # Logs
 logs/

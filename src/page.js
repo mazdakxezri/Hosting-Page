@@ -30,7 +30,8 @@ function featuresSection() {
       const list = document.createElement("li");
       list.id = item.id;
       list.textContent = item.text;
-      list.className = "text-xl font-semibold text-gray-500 pt-6 pb-2";
+      list.className =
+        "text-lg md:text-xl font-semibold md:font-semibold text-gray-500 pt-6 pb-4 md:pb-2";
       listElement.appendChild(list);
     });
   });
