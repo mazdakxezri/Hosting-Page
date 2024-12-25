@@ -31,7 +31,13 @@ function featuresSection() {
       list.id = item.id;
       list.textContent = item.text;
       list.className =
-        "text-lg md:text-xl font-semibold md:font-semibold text-gray-500 pt-6 pb-4 md:pb-2";
+        "text-lg md:text-xl font-semibold md:font-semibold pt-6 pb-4 md:pb-2";
+      if (item.id === 8) {
+        list.className += " text-blue-700";
+      } else {
+        list.className += " text-gray-700";
+      }
+
       listElement.appendChild(list);
     });
   });

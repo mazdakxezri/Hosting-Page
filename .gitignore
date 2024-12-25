@@ -7,7 +7,6 @@ build/
 
 # Environment variables
 .env
-.dist
 
 # Logs
 logs/

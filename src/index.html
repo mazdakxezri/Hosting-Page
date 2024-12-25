@@ -11,59 +11,41 @@
     <script src="page.js" type="module" defer></script>
     <title>Home</title>
   </head>
-  <body class="bg-red-400">
+  <body>
     <div id="Hero" class="shadow-lg">
       <header class="sm:fixed absolute bg-gray-300 inset-x-0 top-0 z-50">
-        <!--Desktop Nav-->
         <nav
-          class="hidden md:flex md:items-center md:justify-between md:p-6 lg:px-8"
+          class="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
           <div class="flex lg:flex-1">
             <a href="#Hero" class="-m-1.5 p-1.5">
               <h2
-                class="h-8 w-auto uppercase text-3xl font-bold lg:font-extrabold lg:text-4xl"
+                class="h-auto w-auto text-gray-900 uppercase text-2xl md:text-3xl font-bold lg:font-extrabold lg:text-4xl"
               >
                 mazdak hosting
               </h2>
             </a>
           </div>
           <div
-            class="hidden sm:flex md:p-6 sm:gap-x-6 sm:justify-end md:justify-center md:gap-x-12"
+            class="flex gap-x-4 md:p-6 sm:gap-x-6 justify-end md:justify-center md:gap-x-12"
           >
-            <a href="#Pricing" class="text-lg font-bold text-gray-900"
+            <a
+              href="#Pricing"
+              class="text-lg md:text-2xl font-bold text-gray-900"
               >Pricing</a
             >
-            <a href="#Contact" class="text-lg font-bold text-gray-900"
+            <a
+              href="#Contact"
+              class="text-lg md:text-2xl font-bold text-gray-900"
               >Contact</a
             >
           </div>
           <div class="hidden md:flex md:flex-1 md:justify-end">
             <a
-              href="#"
-              class="rounded-md bg-gray-800 px-3.5 py-2.5 text-md font-bold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 uppercase"
+              href="../authentication/log-in.html"
+              class="rounded-md bg-gray-800 px-3.5 py-2.5 text-md font-bold text-white shadow-sm hover:bg-gray-700 focus-visible:outline-gray-800 uppercase"
               >Log in <span aria-hidden="true">&rarr;</span></a
-            >
-          </div>
-        </nav>
-        <!-- Mobile Nav -->
-        <nav
-          class="flex items-center justify-between p-6 md:hidden"
-          aria-label="Global"
-        >
-          <div class="flex">
-            <a href="#Hero" class="-m-1.5 p-1.5">
-              <h2 class="h-8 w-auto uppercase font-bold text-xl">
-                mazdak hosting
-              </h2>
-            </a>
-          </div>
-          <div class="flex gap-x-6 justify-end">
-            <a href="#Pricing" class="text-lg font-bold text-gray-900"
-              >Pricing</a
-            >
-            <a href="#Contact" class="text-lg font-bold text-gray-900"
-              >Contact</a
             >
           </div>
         </nav>
@@ -73,12 +55,12 @@
       >
         <div class="text-center">
           <h1
-            class="text-balance text-3xl sm:text-4xl md:text-5xl font-bold md:font-bold tracking-tight text-gray-900"
+            class="text-balance text-3xl sm:text-4xl md:text-5xl font-bold md:font-bold tracking-tight text-gray-200"
           >
             Build Your Online Presence with WordPress
           </h1>
           <p
-            class="mt-8 text-pretty text-lg sm:text-xl md:font-semibold md:text-2xl font-semibold text-gray-500"
+            class="mt-8 text-pretty text-lg sm:text-xl md:font-semibold md:text-2xl font-semibold text-gray-300"
           >
             Start your website with our Free WordPress Hosting. Mazdak Hosting
             offers reliable performance, easy setup, and essential features
@@ -88,13 +70,13 @@
             class="mt-20 md:mt-24 md:flex md:items-center md:justify-center flex items-center justify-around gap-x-6"
           >
             <a
-              href="#"
+              href="../authentication/sign-up.html"
               class="rounded-md bg-gray-800 px-3.5 py-2.5 text-md font-bold text-white shadow-sm hover:bg-gray-700 focus-visible:outline-gray-800 uppercase"
               >sing up</a
             >
             <div class="md:hidden">
               <a
-                href="#"
+                href="../authentication/log-in.html"
                 class="rounded-md bg-gray-800 px-3.5 py-2.5 text-md font-bold text-white shadow-sm hover:bg-gray-700 focus-visible:outline-gray-800 uppercase"
                 >Log in <span aria-hidden="true">→</span></a
               >
@@ -150,11 +132,13 @@
                   /month
                 </p>
               </div>
-              <button
-                class="mt-8 md:mt-6 w-full h-14 bg-blue-800 text-white md:text-xl text-lg font-semibold mb-16 md:mb-14 rounded-lg"
-              >
-                Order
-              </button>
+              <a href="#Pricing">
+                <button
+                  class="mt-8 md:mt-6 w-full h-14 bg-blue-800 text-white md:text-xl text-lg font-semibold mb-16 md:mb-14 rounded-lg"
+                >
+                  Order
+                </button>
+              </a>
 
               <h4
                 class="text-4xl pt-2 md:text-3xl md:pt-8 font-bold md:font-bold text-blue-900"
@@ -197,11 +181,13 @@
                   /month
                 </p>
               </div>
-              <button
-                class="bg-white text-blue-600 mt-8 md:mt-6 w-full h-14 md:text-xl text-lg font-semibold mb-16 md:mb-14 rounded-lg"
-              >
-                Order
-              </button>
+              <a href="#Pricing">
+                <button
+                  class="mt-8 md:mt-6 w-full h-14 bg-white text-blue-600 md:text-xl text-lg font-semibold mb-16 md:mb-14 rounded-lg"
+                >
+                  Order
+                </button>
+              </a>
 
               <h4
                 class="text-4xl pt-2 md:text-3xl md:pt-8 font-bold md:font-bold text-blue-900"
@@ -240,11 +226,13 @@
                   /month
                 </p>
               </div>
-              <button
-                class="mt-8 md:mt-6 w-full h-14 md:text-xl text-lg font-semibold mb-16 md:mb-14 rounded-lg bg-blue-800 text-white"
-              >
-                Order
-              </button>
+              <a href="#Pricing">
+                <button
+                  class="mt-8 md:mt-6 w-full h-14 bg-blue-800 text-white md:text-xl text-lg font-semibold mb-16 md:mb-14 rounded-lg"
+                >
+                  Order
+                </button>
+              </a>
 
               <h4
                 class="text-4xl pt-2 md:text-3xl md:pt-8 font-bold md:font-bold text-blue-900"
@@ -265,11 +253,13 @@
       <div
         class="container flex sm:justify-between justify-evenly items-center gap-10 max-sm:flex-col"
       >
-        <p class="caption lg:block text-gray-800">
+        <p class="caption lg:block md:text-lg text-gray-800">
           © <span id="current-year"></span>. All rights reserved.
         </p>
         <div class="text-center">
-          <h5 class="uppercase font-semibold text-gray-800">contact us</h5>
+          <h5 class="uppercase md:text-xl font-semibold text-gray-800">
+            contact us
+          </h5>
           <ul id="socials-list" class="flex gap-5 flex-wrap"></ul>
         </div>
       </div>
