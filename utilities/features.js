@@ -1,3 +1,4 @@
+// Example data for featuresItem
 export const featuresItem = [
   {
     id: 1,

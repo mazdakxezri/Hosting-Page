@@ -1,15 +1,20 @@
 import { social } from "../utilities/social.js";
 import { featuresItem } from "../utilities/features.js";
 
+// Set the current year
 document.getElementById("current-year").textContent = new Date().getFullYear();
+
+// Function to create the footer
 function createFooter() {
   const socialsList = document.getElementById("socials-list");
   social.forEach((item) => {
+    // Add links for Footer
     const link = document.createElement("a");
     link.href = item.url;
     link.target = "_blank";
     link.className =
       "flex items-center justify-center w-10 h-10 bg-n-7 rounded-full transition-colors hover:bg-n-6";
+    // Add images for Footer
     const img = document.createElement("img");
     img.src = item.iconUrl;
     img.width = 16;
@@ -20,10 +25,12 @@ function createFooter() {
   });
 }
 
+// Function to create features section
 function featuresSection() {
   const featuresList = document.querySelectorAll(".Features-list");
   featuresList.forEach((listElement, indexElement) => {
     featuresItem.forEach((item) => {
+      // Basic plain dosen't have the 8th features
       if (indexElement === 0 && item.id === 8) {
         return;
       }
@@ -43,5 +50,8 @@ function featuresSection() {
   });
 }
 
+// Call the function to create the footer when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", createFooter);
+
+// Call the function to create the features section when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", featuresSection);

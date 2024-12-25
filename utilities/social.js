@@ -1,3 +1,4 @@
+// Social media data (for Footer)
 export const social = [
   {
     id: 1,
