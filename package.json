@@ -1,6 +1,7 @@
 {
   "scripts": {
     "build": "npx postcss src/styles.css -o dist/styles.css",
+    "start": "live-server public",
     "watch": "npx postcss src/styles.css -o dist/styles.css --watch"
   },
   "devDependencies": {

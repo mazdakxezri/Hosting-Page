@@ -1,5 +1,5 @@
-import { social } from "../utilities/social.js";
-import { featuresItem } from "../utilities/features.js";
+import { social } from "../public/utilities/social.js";
+import { featuresItem } from "../public/utilities/features.js";
 
 // Set the current year
 document.getElementById("current-year").textContent = new Date().getFullYear();
