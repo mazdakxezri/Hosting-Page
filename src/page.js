@@ -51,7 +51,7 @@ function featuresSection() {
 }
 
 // Call the function to create the footer when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", createFooter);
+window.addEventListener("DOMContentLoaded", createFooter);
 
 // Call the function to create the features section when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", featuresSection);
+window.addEventListener("DOMContentLoaded", featuresSection);
